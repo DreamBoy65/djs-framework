@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
   "author": "dream",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "djs"
   ],
   "dependencies": {
-    "@colors/colors": "^1.5.0"
+    "@colors/colors": "^1.5.0",
+    "discord.js": "^14.9.0"
   }
 }
