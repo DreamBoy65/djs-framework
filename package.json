@@ -1,5 +1,5 @@
 {
-  "name": "djs-framework",
+  "name": "@shadowgarden/djs-framebot",
   "version": "1.0.0",
   "description": "a framework for djs",
   "main": "lib/index.js",
@@ -23,5 +23,14 @@
     "discord.js": "^14.9.0",
     "jsoning": "^0.13.23",
     "mongoose": "^7.0.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamBoy65/djs-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DreamBoy65/djs-framework/issues"
+  },
+  "homepage": "https://github.com/DreamBoy65/djs-framework#readme"
 }
