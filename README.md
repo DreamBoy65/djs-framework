@@ -118,4 +118,4 @@ module.exports = {
 ```
 
 ## ⭐ the project if you like it!
-![Join our discord](https://i.imgur.com/fFfU9aF.png)
+[![Join our discord](https://i.imgur.com/fFfU9aF.png)](https://discord.gg/pEnmPjS6QK)
