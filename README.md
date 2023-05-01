@@ -1,6 +1,6 @@
 # DJS Framework
 
-A framework for your bot..
+A framework for your bot with discord.js@v14
 
 ## Contents
 - [How to use it?](#how-to-use-it-)
