@@ -4,8 +4,4 @@ const {
 const config = require("./config")
 const client = new Client(config)
 
-client.on("ready", () => {
-  console.log(client)
-})
-
 client.start()
