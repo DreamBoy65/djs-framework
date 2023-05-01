@@ -12,14 +12,13 @@ A framework for your bot with discord.js@v14
 ## How to use it?
 
 ```
-djs-framework/
-├─ lib/
-├─ bot/
-│  ├─ databases/
+<your bot name>/
+├─ src/
 │  ├─ slashCommands/
 │  ├─ textCommands/
 │  ├─ events/
 │  │  ├─ client/
+│  │  ├─ guild/
 │  ├─ config.js
 │  ├─ index.js
 ├─ node_modules/
@@ -59,13 +58,6 @@ module.exports = {
     dir: "bot/textCommands", // text command directory
     folders: ["lol"],
     showLogs: false
-  },
-
-  jsonDB: {
-    enable: false,
-    dir: "bot/databases",
-    dbs: ["data"],
-    autoLoad: true
   }
 }
 ```
@@ -75,7 +67,7 @@ module.exports = {
 ```js
 const {
   Client
-} = require(`${process.cwd()}/lib/index`)
+} = require(`@shadowgarden/djs-framebot`)
 const config = require("./config")
 const client = new Client(config)
 
@@ -97,6 +89,10 @@ module.exports = {
     enable: true,
     time: 5000
   },
+  clientPermissions: [],
+  memberPermissions: [],
+  adminOnly: false,
+  ownerOnly: false,
   run: async(client, int) => {
     int.follow({
       content: "lol"
@@ -111,6 +107,14 @@ module.exports = {
 module.exports = {
   name: "ping",
   description: "ping",
+  cooldown: {
+    enable: true,
+    time: 5000
+  },
+  clientPermissions: [],
+  memberPermissions: [],
+  adminOnly: false,
+  ownerOnly: false,
   run: async(client, message, args) => {
     message.channel.send('pong!')
   }
