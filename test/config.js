@@ -1,15 +1,15 @@
 module.exports = {
   bot: {
     token:
-    "ODE4MTMyNzUwMTQ1MjkwMjQy.GIL6Bu.JVxgqOD-njlEu4tnEo55rw1amXDGMVxnCe9Qsk",
+    "ODE4MTMyNzUwMTQ1MjkwMjQy.GajpOO.33udjR29UP-I5mhJZVnsWeR3B_OE2FE0TKcIY",
     intents: ["Guilds"]
   },
 
   events: {
     dir: "test/events",
     subDirs: ["client"],
-    dirs: true,
-    showLogs: false
+    dirs: false,
+    showLogs: true
   },
 
   slashCommand: {
@@ -33,5 +33,7 @@ module.exports = {
     dir: "test/databases",
     dbs: ["data"],
     autoLoad: true
-  }
+  },
+
+
 }
