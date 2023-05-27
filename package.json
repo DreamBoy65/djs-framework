@@ -1,6 +1,6 @@
 {
   "name": "@shadowgarden/djs-framebot",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "a framework for djs",
   "main": "lib/index.js",
   "directories": {
